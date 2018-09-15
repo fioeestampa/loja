@@ -5,8 +5,8 @@
 		<title>Loja 2.0</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/bootstrap.min.css" type="text/css" />
-		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo BASE_URL; ?>views/templates/ecommerce/padrao/css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo BASE_URL; ?>views/templates/ecommerce/padrao/css/style.css" type="text/css" />
 	</head>
 	<body>
 		<nav class="navbar topnav">
@@ -33,7 +33,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2 logo">
-						<a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>assets/images/logo.png" /></a>
+						<a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>views/templates/ecommerce/padrao/images/logo.png" /></a>
 					</div>
 					<div class="col-sm-7">
 						<div class="head_help">(11) 9999-9999</div>
@@ -150,7 +150,7 @@
 	    		<div class="container">
 	    			<div class="row">
 						<div class="col-sm-4">
-							<a href="<?php echo BASE_URL; ?>"><img width="150" src="<?php echo BASE_URL; ?>assets/images/logo.png" /></a><br/><br/>
+							<a href="<?php echo BASE_URL; ?>"><img width="150" src="<?php echo BASE_URL; ?>views/templates/ecommerce/padrao/images/logo.png" /></a><br/><br/>
 							<strong>Slogan da Loja Virtual</strong><br/><br/>
 							Endereço da Loja Virtual
 						</div>
@@ -211,8 +211,8 @@
 	    	</div>
 	    </footer>
 		<script type="text/javascript">var BASE_URL = '<?php echo BASE_URL; ?>';</script>
-		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.min.js"></script>
-		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/script.js"></script>
+		<script type="text/javascript" src="<?php echo BASE_URL; ?>views/templates/ecommerce/padrao/js/jquery.min.js"></script>
+		<script type="text/javascript" src="<?php echo BASE_URL; ?>views/templates/ecommerce/padrao/js//bootstrap.min.js"></script>
+		<script type="text/javascript" src="<?php echo BASE_URL; ?>views/templates/ecommerce/padrao/js//script.js"></script>
 	</body>
 </html>
