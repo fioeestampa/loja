@@ -1318,7 +1318,7 @@ a.add_lovelist:hover {
 }
 .tovar_title {
 	float:left;
-	width:80%;
+	width:75%;
 	display:block;
 	text-transform:uppercase;
 	font-weight:900;
@@ -1489,7 +1489,7 @@ a.add_lovelist:hover {
 
 .tovar_sale {position:relative;}
 .tovar_sale:before {
-	content:'sale';
+	content:'Promoção';
 	position:absolute;
 	z-index:2;
 	right:0;

@@ -8,9 +8,11 @@ class homeController extends controller {
     }
 
     public function index() {
-        $dados = array();
+        $data = array();
 
-        $this->loadTemplate('home', $dados);
+	$products = new vs_Products();
+	$data['list'] = $products->getList();
+        $this->loadTemplate('home', $data);
     }
 
 }

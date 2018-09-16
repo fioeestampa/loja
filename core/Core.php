@@ -27,20 +27,35 @@ class Core {
 			$currentController = 'homeController';
 			$currentAction = 'index';
 		}
-
-		if(!file_exists('controllers/'.$currentController.'.php')) {
-			$currentController = 'notFoundController';
-			$currentAction = 'index';
+		
+		
+		// Caso exita o "Controll" com o nome digitado faça:
+		if(file_exists('controllers/'.$currentController.'.php')){
+		    $c = new $currentController();
 		}
-
-		$c = new $currentController();
-
-		if(!method_exists($c, $currentAction)) {
-			$currentAction = 'index';
+		// Caso não exista o "Controlle" digitado faça:
+		else{
+		    $pName = explode("Controller", $currentController);
+		    $pName = $pName[0];
+		    // Caso não exista o Controlle digitado
+		    // Mas exista uma categoria digitada faça:
+		    $categories = new vs_Categories;
+		    $m = array($categories->getCategoriesMainUrl($pName));
+		    
+		    if(!empty($m)){
+			$c = new categoriesController();
+			$currentAction = "index";
+			$params = array($pName);
+		    }
+		    else{
+		    // Caso não exista o "Controlle" digitado faça:
+		    $c = new pageController();
+		    $currentAction = "index";
+		    $params = array($pName);
+		    }
 		}
-
+		
 		call_user_func_array(array($c, $currentAction), $params);
-
 	}
 
 }

@@ -26,5 +26,13 @@ class controller {
 		extract($viewData);
 		include 'views/templates/ecommerce/'.$this->cms_Settings['template'].'/tpl/'.$viewName.'.php';
 	}
+	
+	public function loadMenuPrincipal() {
+	$menu = new vs_categories;
+	$m = array();
+	$m['menu'] = $menu->getCategoriesMain();
+	
+	$this->loadView("menu_principal", $m);
+    }
 
 }
